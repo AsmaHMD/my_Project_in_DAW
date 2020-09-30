@@ -1,0 +1,2880 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <title>تسوق</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styling.css" rel="stylesheet">
+        <style>
+            #shoping{
+                width: 80%;
+                /* margin: 50px 10%; */
+                text-align: center;
+                float: left;
+            }
+            #home{
+                display: none;
+                height: 11500px;
+            }
+            #wed{
+                display: none;
+                height: 7500px;
+            }
+            #out{
+                display: none;
+                height: 45300px;
+
+            }
+            #party{
+                display: none;
+                height: 19900px;
+            }
+            #shoping h1{
+                font-size: 35px;
+                color: #111;
+                margin: 50px;
+                height: 70px;
+                border-bottom: 2px solid #ee8f8f;
+            }
+            #img{
+                width: 47%;
+                height: 500px;
+                float: right;
+                margin: 10px 1.5%;
+                
+            }
+            #img img{
+                width: 97%;
+                height: 100%;
+                border-radius: 5%;
+            }
+            #inf{
+                background-image: linear-gradient(to left,#111,#ee8f8f,#111);
+                border-radius: 5%;
+                width: 47%;
+                height: 500px;
+                float: right;
+                margin: 10px 1.5%;
+            }
+            #inf form{
+                margin: 40px 0px;
+            }
+            .add{
+                background-color: rgba(255, 255, 255, 0.705);
+                border: none;
+                outline: none;
+                border-bottom: 2px solid rgb(5, 160, 160);
+                font-size: 20px;
+                width: 30%;
+                height: 35px;
+            }
+            h2{
+                color: rgb(5, 160, 160) ;
+                font-size: 30px;
+                margin: 15px 5px;
+            }
+            label{
+                color: #111;
+                font-size: 25px;
+            }
+            #inf button , #send{
+                width: 60%;
+                height: 70px;
+                border-radius: 10%;
+                border: none;
+                outline: none;
+                font-size: 25px;
+                color: #111;
+                background-image: linear-gradient(to left,#111,rgb(5, 160, 160),#ee8f8f);
+            }
+            h3{
+                display: inline-block;
+                margin: 20px;
+                padding: 18px 0;
+                color: #ee8f8f;
+                text-transform: uppercase;
+                font-size: 30px;
+                font-weight: 500;
+                transition: .3s linear;
+                position: relative;
+            }
+            .menu h3:hover{
+                color: #111;
+                background-color:#ee8f8f;
+            }
+            #logo{
+                width: 40%;
+            }
+
+
+
+        </style>
+    </head>
+<body dir="rtl">
+    <header>
+        <ul class="menu">
+            <li><a href="anaqa-login.html">تسجيل الدخول</a></li>
+            <li><h3  onclick="document.getElementById('home').style.display= 'block';" ondblclick="document.getElementById('home').style.display= 'none';">
+                ملابس للبيت
+            </h3></li>
+            <li><h3  onclick="document.getElementById('out').style.display= 'block';"ondblclick="document.getElementById('out').style.display= 'none';">
+                ملابس عملية
+            </h3></li>
+            <li><h3  onclick="document.getElementById('party').style.display= 'block';" ondblclick="document.getElementById('party').style.display= 'none';">
+                ملابس للحفلات
+            </h3></li>
+            <li><h3  onclick="document.getElementById('wed').style.display= 'block';" ondblclick="document.getElementById('wed').style.display= 'none';">
+                فساتين الزفاف
+            </h3></li>
+
+            <li><a href="anaqa-login.html">ارسال الطلبات</a></li>
+
+          </ul> 
+    </header>
+    <div id="contact">
+            <a href="anaqa-shop.html"><img src="shoppin.png" /></a>
+            <a href="https://www.facebook.com"><img src="fb.png" /></a>
+            <a href=""><img src="t.png" /></a>
+            <a href="https://www.instagram.com/"><img src="i.png" /></a>
+    </div>
+    <div id="shoping">
+        <div id="home">
+            <h1>
+                ملابس للبيت
+            </h1>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="home/1.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>لباس بيتي رقم 1</label></h2>
+                            <h2>السعر:<label>1200دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="bleu and red">أزرق و أحمر</option>
+                                    <option value="blach and white">أسود و أبيض</option>
+                                    <option value="purple and yellow">بنفسجي و أصفر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="home/2.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>لباس بيتي رقم 2</label></h2>
+                            <h2>السعر:<label>1200دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="grey">رمادي</option>
+                                    <option value="blach">أسود</option>
+                                    <option value="purple">بنفسجي</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="home/3.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>لباس بيتي رقم 3</label></h2>
+                            <h2>السعر:<label>1200دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="blach and white">أسود و أبيض</option>
+                                    <option value="bleu and red">أزرق و أحمر</option>
+                                    <option value="purple and yellow">بنفسجي و أصفر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="home/4.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>لباس بيتي رقم 4</label></h2>
+                            <h2>السعر:<label>1200دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="bleu and red">أزرق و أحمر</option>
+                                    <option value="blach and white">أسود و أبيض</option>
+                                    <option value="purple and yellow">بنفسجي و أصفر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="home/5.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>لباس بيتي رقم 5</label></h2>
+                            <h2>السعر:<label>1200دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="bleu and red">أزرق و أحمر</option>
+                                    <option value="blach and white">أسود و أبيض</option>
+                                    <option value="purple and yellow">بنفسجي و أصفر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="home/6.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>لباس بيتي رقم 6</label></h2>
+                            <h2>السعر:<label>1200دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="bleu and red">أزرق و أحمر</option>
+                                    <option value="blach and white">أسود و أبيض</option>
+                                    <option value="purple and yellow">بنفسجي و أصفر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="home/7.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>لباس بيتي رقم 7</label></h2>
+                            <h2>السعر:<label>1200دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="bleu and red">أزرق و أحمر</option>
+                                    <option value="blach and white">أسود و أبيض</option>
+                                    <option value="purple and yellow">بنفسجي و أصفر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="home/8.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>لباس بيتي رقم 8</label></h2>
+                            <h2>السعر:<label>1200دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="bleu and red">أزرق و أحمر</option>
+                                    <option value="blach and white">أسود و أبيض</option>
+                                    <option value="purple and yellow">بنفسجي و أصفر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="home/9.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>لباس بيتي رقم 9</label></h2>
+                            <h2>السعر:<label>1200دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="bleu and red">أزرق و أحمر</option>
+                                    <option value="blach and white">أسود و أبيض</option>
+                                    <option value="purple and yellow">بنفسجي و أصفر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="home/10.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>لباس بيتي رقم 10</label></h2>
+                            <h2>السعر:<label>1200دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="bleu and red">أزرق و أحمر</option>
+                                    <option value="blach and white">أسود و أبيض</option>
+                                    <option value="purple and yellow">بنفسجي و أصفر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="home/11.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>لباس بيتي رقم 11</label></h2>
+                            <h2>السعر:<label>1200دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="bleu and red">أزرق و أحمر</option>
+                                    <option value="blach and white">أسود و أبيض</option>
+                                    <option value="purple and yellow">بنفسجي و أصفر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="home/12.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>لباس بيتي رقم 12</label></h2>
+                            <h2>السعر:<label>1200دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="bleu and red">أزرق و أحمر</option>
+                                    <option value="blach and white">أسود و أبيض</option>
+                                    <option value="purple and yellow">بنفسجي و أصفر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="home/dress/1.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>لباس بيتي رقم 13</label></h2>
+                            <h2>السعر:<label>1200دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="bleu and red">أزرق و أحمر</option>
+                                    <option value="blach and white">أسود و أبيض</option>
+                                    <option value="purple and yellow">بنفسجي و أصفر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="home/dress/2.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>لباس بيتي رقم 14</label></h2>
+                            <h2>السعر:<label>1200دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="bleu and red">أزرق و أحمر</option>
+                                    <option value="blach and white">أسود و أبيض</option>
+                                    <option value="purple and yellow">بنفسجي و أصفر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="home/dress/3.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>لباس بيتي رقم 15</label></h2>
+                            <h2>السعر:<label>1200دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="bleu and red">أزرق و أحمر</option>
+                                    <option value="blach and white">أسود و أبيض</option>
+                                    <option value="purple and yellow">بنفسجي و أصفر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="home/dress/4.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>لباس بيتي رقم 16</label></h2>
+                            <h2>السعر:<label>1200دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="bleu and red">أزرق و أحمر</option>
+                                    <option value="blach and white">أسود و أبيض</option>
+                                    <option value="purple and yellow">بنفسجي و أصفر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="home/dress/5.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>لباس بيتي رقم 17</label></h2>
+                            <h2>السعر:<label>1200دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="bleu and red">أزرق و أحمر</option>
+                                    <option value="blach and white">أسود و أبيض</option>
+                                    <option value="purple and yellow">بنفسجي و أصفر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="home/dress/6.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>لباس بيتي رقم 18</label></h2>
+                            <h2>السعر:<label>1200دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="bleu and red">أزرق و أحمر</option>
+                                    <option value="blach and white">أسود و أبيض</option>
+                                    <option value="purple and yellow">بنفسجي و أصفر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="home/dress/7.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>لباس بيتي رقم 19</label></h2>
+                            <h2>السعر:<label>1200دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="bleu and red">أزرق و أحمر</option>
+                                    <option value="blach and white">أسود و أبيض</option>
+                                    <option value="purple and yellow">بنفسجي و أصفر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="home/dress/8.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>لباس بيتي رقم 20</label></h2>
+                            <h2>السعر:<label>1200دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="bleu and red">أزرق و أحمر</option>
+                                    <option value="blach and white">أسود و أبيض</option>
+                                    <option value="purple and yellow">بنفسجي و أصفر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+             </article>
+        </article><article id="shop" >
+            <div>
+                <div id="img">
+                    <img src="home/dress/9.jpg" />
+                </div>
+                <div id="inf">
+                    <form>
+                        <h2>عنوان الصورة:<label>لباس بيتي رقم 21</label></h2>
+                        <h2>السعر:<label>1200دج</label></h2> 
+                        <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                        <h2>اللون المطلوب:
+                            <select name="اللون" class="add" required>
+                                <option value="bleu and red">أزرق و أحمر</option>
+                                <option value="blach and white">أسود و أبيض</option>
+                                <option value="purple and yellow">بنفسجي و أصفر</option>
+                            </select></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                    </form>
+                </div>
+            </div>
+        </article>
+    
+    </article><article id="shop" >
+        <div>
+            <div id="img">
+                <img src="home/dress/10.jpg" />
+            </div>
+            <div id="inf">
+                <form>
+                    <h2>عنوان الصورة:<label>لباس بيتي رقم 22</label></h2>
+                    <h2>السعر:<label>1200دج</label></h2> 
+                    <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                    <h2>اللون المطلوب:
+                        <select name="اللون" class="add" required>
+                            <option value="bleu and red">أزرق و أحمر</option>
+                            <option value="blach and white">أسود و أبيض</option>
+                            <option value="purple and yellow">بنفسجي و أصفر</option>
+                        </select></h2>
+                        <button>اضف لقائمة المقتنيات</button>
+                </form>
+            </div>
+        </div>
+    </article>
+        </div>
+        
+        <div id="out">
+            <h1>
+                ملابس عملية
+            </h1>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/1.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 1</label></h2>
+                            <h2>السعر:<label>5000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/2.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 2</label></h2>
+                            <h2>السعر:<label>4500 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/3.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 3</label></h2>
+                            <h2>السعر:<label>4000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/4.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 4</label></h2>
+                            <h2>السعر:<label>4000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/5.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 5</label></h2>
+                            <h2>السعر:<label>5000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/6.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 6</label></h2>
+                            <h2>السعر:<label>6000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/7.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 7</label></h2>
+                            <h2>السعر:<label>4000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/8.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 8</label></h2>
+                            <h2>السعر:<label>3800 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/9.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 9</label></h2>
+                            <h2>السعر:<label>4500 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/10.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 10</label></h2>
+                            <h2>السعر:<label>4600 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/11.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 11 </label></h2>
+                            <h2>السعر:<label>5500 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/12.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 12</label></h2>
+                            <h2>السعر:<label>6000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/13.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 13</label></h2>
+                            <h2>السعر:<label>5500 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/14.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 14</label></h2>
+                            <h2>السعر:<label>3000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/15.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 15</label></h2>
+                            <h2>السعر:<label>4200 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/16.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 16</label></h2>
+                            <h2>السعر:<label>4000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/17.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 17</label></h2>
+                            <h2>السعر:<label>3000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/18.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 18</label></h2>
+                            <h2>السعر:<label>3800 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/19.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 19</label></h2>
+                            <h2>السعر:<label>3000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/20.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 20</label></h2>
+                            <h2>السعر:<label>2800 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/21.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 21</label></h2>
+                            <h2>السعر:<label>4600 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/22.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 22</label></h2>
+                            <h2>السعر:<label>4000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/23.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 23</label></h2>
+                            <h2>السعر:<label>4700 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/24.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 24</label></h2>
+                            <h2>السعر:<label>3000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/25.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 25</label></h2>
+                            <h2>السعر:<label>3800 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/26.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 26</label></h2>
+                            <h2>السعر:<label>4500 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/27.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 27</label></h2>
+                            <h2>السعر:<label>3400 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out/28.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية رقم 28</label></h2>
+                            <h2>السعر:<label>3200 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="black">أسود</option>
+                                    <option value="pink">وردي</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/1.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 1</label></h2>
+                            <h2>السعر:<label>4000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="green">أخضر</option>
+                                    <option value="blue">أزرق</option>
+                                    <option value="black">أسود</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/2.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 2</label></h2>
+                            <h2>السعر:<label>3400دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="purple">بنفسجي</option>
+                                    <option value="red">أحمر</option                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/3.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 3</label></h2>
+                            <h2>السعر:<label>3000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="grey">رمادي</option>
+                                    <option value="green">أخضر</option>
+                                    <option value="brown">بني</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/4.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 4</label></h2>
+                            <h2>السعر:<label>3500 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="purple">بنفسجي</option>
+                                    <option value="black">أسود</option>
+                                    <option value="green">أخضر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/5.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 5</label></h2>
+                            <h2>السعر:<label>3000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="yellow">أصفر</option>
+                                    <option value="red">أحمر</option>
+                                    <option value="orange">برتقالي</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/6.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 6</label></h2>
+                            <h2>السعر:<label>3300 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="orange">برتقالي</option>
+                                    <option value="red">أحمر</option>
+                                    <option value="black">أسود</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/7.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 7</label></h2>
+                            <h2>السعر:<label>3000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="grey">رمادي</option>
+                                    <option value="red">أحمر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/8.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 8</label></h2>
+                            <h2>السعر:<label>4000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/9.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 9</label></h2>
+                            <h2>السعر:<label>4000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/10.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 10</label></h2>
+                            <h2>السعر:<label>4000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/11.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 11</label></h2>
+                            <h2>السعر:<label>4000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/12.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 12</label></h2>
+                            <h2>السعر:<label>4000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/13.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 13</label></h2>
+                            <h2>السعر:<label>4600 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="green">أخضر</option>
+                                    <option value="blue">أزرق</option>
+                                    <option value="purple">بنفسجي</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/14.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 14</label></h2>
+                            <h2>السعر:<label>7000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/15.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 15</label></h2>
+                            <h2>السعر:<label>6000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/16.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 16</label></h2>
+                            <h2>السعر:<label>5800 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/17.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 17</label></h2>
+                            <h2>السعر:<label>6000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/18.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 18</label></h2>
+                            <h2>السعر:<label>7000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/19.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 19</label></h2>
+                            <h2>السعر:<label>5500 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/20.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 20</label></h2>
+                            <h2>السعر:<label>5000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/21.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 21</label></h2>
+                            <h2>السعر:<label>5300 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/22.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 22</label></h2>
+                            <h2>السعر:<label>4800 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/23.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 23</label></h2>
+                            <h2>السعر:<label>7200 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/24.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 24</label></h2>
+                            <h2>السعر:<label>6700 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/25.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 25</label></h2>
+                            <h2>السعر:<label>6800 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/26.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 26</label></h2>
+                            <h2>السعر:<label>6000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/27.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 27</label></h2>
+                            <h2>السعر:<label>5500 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/28.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 28</label></h2>
+                            <h2>السعر:<label>7000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/29.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 29</label></h2>
+                            <h2>السعر:<label>4000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/30.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 30</label></h2>
+                            <h2>السعر:<label>5000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="blue">أزرق</option>
+                                    <option value="pink">وردي</option>
+                                    <option value="green">أخضر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/1.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 31</label></h2>
+                            <h2>السعر:<label>7000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="blue">أزرق</option>
+                                    <option value="pink">وردي</option>
+                                    <option value="green">أخضر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/2.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 32</label></h2>
+                            <h2>السعر:<label>6800 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="pink">وردي</option>
+                                    <option value="blue">أزرق</option>
+                                    <option value="green">أخضر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/3.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 33</label></h2>
+                            <h2>السعر:<label>5800 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/4.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 34</label></h2>
+                            <h2>السعر:<label>6000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/5.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 35</label></h2>
+                            <h2>السعر:<label>8000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/6.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 36</label></h2>
+                            <h2>السعر:<label>7000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/7.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 37</label></h2>
+                            <h2>السعر:<label>6500 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/8.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 38</label></h2>
+                            <h2>السعر:<label>8000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/9.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 39</label></h2>
+                            <h2>السعر:<label>8000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="green">أخضر</option>
+                                    <option value="blue">أزرق</option>
+                                    <option value="black">أسود</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/10.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 40</label></h2>
+                            <h2>السعر:<label>8000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="blue">أزرق</option>
+                                    <option value="pink">وردي</option>
+                                    <option value="purple">بنفسجي</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/11.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 41</label></h2>
+                            <h2>السعر:<label>7000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="pink">وردي</option>
+                                    <option value="grey">رمادي</option>
+                                    <option value="black">أسود</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/12.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 42</label></h2>
+                            <h2>السعر:<label>6700 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="red">أحمر</option>
+                                    <option value="blue">أزرق</option>
+                                    <option value="pink">وردي</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/13.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 43</label></h2>
+                            <h2>السعر:<label>5000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/14.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 44</label></h2>
+                            <h2>السعر:<label>7000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/15.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 45</label></h2>
+                            <h2>السعر:<label>6800 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="pink">وردي</option>
+                                    <option value="blue">أزرق</option>
+                                    <option value="green">أخضر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/16.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 46</label></h2>
+                            <h2>السعر:<label>6500 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/17.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 47</label></h2>
+                            <h2>السعر:<label>5500 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/18.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 48</label></h2>
+                            <h2>السعر:<label>7900 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="red">أحمر</option>
+                                    <option value="blue">أزرق</option>
+                                    <option value="green">أخضر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/19.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 49</label></h2>
+                            <h2>السعر:<label>9000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/20.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 50</label></h2>
+                            <h2>السعر:<label>9700 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/21.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 51</label></h2>
+                            <h2>السعر:<label>8900 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/22.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 52</label></h2>
+                            <h2>السعر:<label>8000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/23.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 53</label></h2>
+                            <h2>السعر:<label>6900 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="purple">بنفسجي</option>
+                                    <option value="blue">أزرق</option>
+                                    <option value="green">أخضر</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/24.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 54</label></h2>
+                            <h2>السعر:<label>9500 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/25.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 55</label></h2>
+                            <h2>السعر:<label>8900 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <h2>اللون المطلوب:
+                                <select name="اللون" class="add" required>
+                                    <option value="blue">أزرق</option>
+                                    <option value="red">أحمر</option>
+                                    <option value="black">أسود</option>
+                                </select></h2>
+                                <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/26.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 56</label></h2>
+                            <h2>السعر:<label>7000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/27.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 57</label></h2>
+                            <h2>السعر:<label>6000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/28.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 58</label></h2>
+                            <h2>السعر:<label>4000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/29.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 59</label></h2>
+                            <h2>السعر:<label>5000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="out-muslim/p/30.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>حلة ملابس عملية للمحجبات رقم 60</label></h2>
+                            <h2>السعر:<label>7000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            
+
+
+
+            
+        </div>
+        
+        <div id="party">
+            <h1>
+                ملابس للحفلات
+            </h1>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/1.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 1</label></h2>
+                            <h2>السعر:<label>8000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/2.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 2</label></h2>
+                            <h2>السعر:<label>7500دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/3.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 3</label></h2>
+                            <h2>السعر:<label>8000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/4.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 4</label></h2>
+                            <h2>السعر:<label>9000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/5.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 5</label></h2>
+                            <h2>السعر:<label>7800دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/6.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 6</label></h2>
+                            <h2>السعر:<label>5000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/7.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 8</label></h2>
+                            <h2>السعر:<label>8000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/8.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 8</label></h2>
+                            <h2>السعر:<label>9900دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/9.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 9</label></h2>
+                            <h2>السعر:<label>4000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/10.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 10</label></h2>
+                            <h2>السعر:<label>7000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/11.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 11</label></h2>
+                            <h2>السعر:<label>7800دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/12.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 12</label></h2>
+                            <h2>السعر:<label>6700دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/13.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 13</label></h2>
+                            <h2>السعر:<label>8900دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/14.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 14</label></h2>
+                            <h2>السعر:<label>7000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/15.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 15</label></h2>
+                            <h2>السعر:<label>11000</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/16.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 16</label></h2>
+                            <h2>السعر:<label>10000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/17.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 17</label></h2>
+                            <h2>السعر:<label>10000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/18.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 18</label></h2>
+                            <h2>السعر:<label>11000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/19.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 19</label></h2>
+                            <h2>السعر:<label>8000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/20.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 20</label></h2>
+                            <h2>السعر:<label>8500دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/21.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 21</label></h2>
+                            <h2>السعر:<label>9000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/22.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 22</label></h2>
+                            <h2>السعر:<label>6800دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/23.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 23</label></h2>
+                            <h2>السعر:<label>5000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/24.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 24</label></h2>
+                            <h2>السعر:<label>7000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party/25.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات رقم 25</label></h2>
+                            <h2>السعر:<label>10000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party-muslim/1.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات  للمحجبات رقم 1</label></h2>
+                            <h2>السعر:<label>10000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party-muslim/2.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات  للمحجبات رقم2</label></h2>
+                            <h2>السعر:<label>9500دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party-muslim/3.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات  للمحجبات رقم3</label></h2>
+                            <h2>السعر:<label>7000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party-muslim/4.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات  للمحجبات رقم4</label></h2>
+                            <h2>السعر:<label>7500دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party-muslim/5.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات  للمحجبات رقم5</label></h2>
+                            <h2>السعر:<label>8700دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party-muslim/6.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات  للمحجبات رقم6</label></h2>
+                            <h2>السعر:<label>9000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party-muslim/7.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات  للمحجبات رقم7</label></h2>
+                            <h2>السعر:<label>8500دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party-muslim/8.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات  للمحجبات رقم8</label></h2>
+                            <h2>السعر:<label>8000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party-muslim/9.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات  للمحجبات رقم9</label></h2>
+                            <h2>السعر:<label>7000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party-muslim/10.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات  للمحجبات رقم10</label></h2>
+                            <h2>السعر:<label>7800دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party-muslim/11.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات  للمحجبات رقم11</label></h2>
+                            <h2>السعر:<label>7000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party-muslim/12.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات  للمحجبات رقم12</label></h2>
+                            <h2>السعر:<label>8000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="party-muslim/13.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان حفلات  للمحجبات رقم13</label></h2>
+                            <h2>السعر:<label>97000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            
+            
+        </div>
+        
+        <div id="wed">
+            <h1>
+                فساتين الزفاف
+            </h1>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="wedd/1.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان زفاف رقم 1</label></h2>
+                            <h2>السعر:<label>40000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="wedd/2.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان زفاف رقم 2</label></h2>
+                            <h2>السعر:<label>30000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="wedd/3.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان زفاف رقم 3</label></h2>
+                            <h2>السعر:<label>38000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="wedd/4.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان زفاف رقم 4</label></h2>
+                            <h2>السعر:<label>35000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="wedd/5.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان زفاف رقم5</label></h2>
+                            <h2>السعر:<label>40000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="wedd/6.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان زفاف رقم 6</label></h2>
+                            <h2>السعر:<label>35000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="wedd/7.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان زفاف رقم 7</label></h2>
+                            <h2>السعر:<label>42000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="wedd/8.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان زفاف رقم 8</label></h2>
+                            <h2>السعر:<label>40000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="wedd/9.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان زفاف رقم 9</label></h2>
+                            <h2>السعر:<label>30000  دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="wedd/10.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان زفاف رقم 10</label></h2>
+                            <h2>السعر:<label>38000دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="wedd/11.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان زفاف رقم 11</label></h2>
+                            <h2>السعر:<label>40000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="wedd/12.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان زفاف رقم 12</label></h2>
+                            <h2>السعر:<label>40000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="wedd/13.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان زفاف رقم 13</label></h2>
+                            <h2>السعر:<label>45000</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <article id="shop" >
+                <div>
+                    <div id="img">
+                        <img src="wedd/14.jpg" />
+                    </div>
+                    <div id="inf">
+                        <form>
+                            <h2>عنوان الصورة:<label>فستان زفاف رقم 14</label></h2>
+                            <h2>السعر:<label>47000 دج</label></h2> 
+                            <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                            <button>اضف لقائمة المقتنيات</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <img src="0.png" id="logo" />
+
+
+    <!-- <article id="shop" >
+        <div>
+            <div id="img">
+                <img src="" />
+            </div>
+            <div id="inf">
+                <form>
+                    <h2>عنوان الصورة:<label></label></h2>
+                    <h2>السعر:<label></label></h2> 
+                    <h2>المقاس المطلوب:<input class="add" type="number" name="size" placeholder="38" value="38" required/></h2>
+                    <h2>اللون المطلوب:
+                        <select name="اللون" class="add" required>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select></h2>
+                        <button>اضف لقائمة المقتنيات</button>
+                </form>
+            </div>
+        </div>
+    </article> -->
+    <button id="send">ارسال جميع الطلبات</button>
+    </div>
+
+</body>
+</html>

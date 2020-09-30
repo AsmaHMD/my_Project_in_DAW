@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <title>تسجيل الدخول</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styling.css" rel="stylesheet">
+        
+    </head>
+    <body dir="rtl" id="log_page">
+        <div id="login">
+            <div id="element">
+                <button class="btn" id="btn_1">انشاء حساب</button>
+                <button class="btn" id="btn_2">تسجيل الدخول</button>
+                <div id="registre">
+                    <form>
+                        <br><input type="text" name="f_name" id="f_name" class="input" placeholder="  ضعي اسمك " required oninvalid="error_msg(this)" oninput="error_msg(this)" />
+                        <br><input type="text" name="l_name" id="l_name" class="input" placeholder="  ضعي لقبك" required oninvalid="error_msg(this)" oninput="error_msg(this)"/>
+                        <br><input type="email" name="email" id="r_email" class="input" placeholder="  البريد الالكتروني" required oninvalid="error_msg(this)" oninput="error_msg(this)"/>
+                        <br><input type="password" name="password" id="r_password" class="input" placeholder="  كلمة المرور" required oninvalid="error_msg(this)" oninput="error_msg(this)"/>
+                        <br><button type="submit" class="btn1">انشاء الحساب</button>
+                    </form>
+            
+                </div>
+                <div id="log">
+                    <form>
+                        <br><input type="email" id="l_email" name="email" class="input" placeholder="  البريد الالكتروني" required oninvalid="error_msg(this)" oninput="error_msg(this)"/>
+                        <br><input type="password" id="l_password" name="password" class="input" placeholder="  كلمة المرور" required oninvalid="error_msg(this)" oninput="error_msg(this)"/>
+                        <br><button type="submit" class="btn1">تسجيل الدخول</button>
+                    </form>
+            
+                </div>
+                <br><a href="anaqatoki.html" id="back">العودة الى الصفحة الرئيسية</a>
+            </div>
+            
+        </div>
+        <script src="anaqa-js.js"></script>
+    </body>
+</html>

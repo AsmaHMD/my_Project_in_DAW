@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Open Sans",sans-serif;
+}
+body{
+    background-color: rgb(5, 160, 160);
+    height: auto;
+}
+/* -----تصميم صفحة تسجيل الدخول------- */
+#log_page{
+    background-color:rgb(5, 160, 160) ;
+    height: auto;
+}
+#login {
+    width: 70%;
+    height: 500px;
+    background-color: #111;
+    background-size: 33.3% 100%;
+    text-align: center;
+    margin-right: 14%;
+    margin-top: 50px;
+    border: 4px dotted #ee8f8f;
+    position: relative;
+}
+#element{
+    width: 70%;
+    height: 70%;
+    background-image: url("0.png");
+    background-repeat: no-repeat;
+    background-size: 60% 100%;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn{
+    width: 30%;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 10% ;
+    margin: 5px 40px;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to left , #111 , rgb(5, 160, 160));
+    color: #ee8f8f;
+    -webkit-text-stroke: 1px white;
+
+}
+.input{
+    width: 90%;
+    height: 40px;
+    margin: 5px 10px;
+    font-size: 25px;
+    color: rgb(5, 160, 160);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(5, 160, 160);
+}
+.btn1{
+    width: 70%;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 40%;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to left,  #ee8f8f, rgb(5, 160, 160));
+    color: #111;
+}
+#back{
+    text-decoration: none;
+    color: rgb(5, 160, 160);
+    font-weight: bolder;
+    font-size: 25px;
+    margin-top: 10px;
+    -webkit-text-stroke: 1px #111;
+}
+
+/*------------الصفحة الرئيسية------------*/
+header{
+    width: 20%;
+    display: flex;
+    height: auto;
+    background-color: #111;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+}  
+.menu a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 30px;
+    color: #ee8f8f;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    transition: .3s linear;
+    position: relative;
+}
+.menu a:hover{
+    color: #111;
+    background-color:#ee8f8f;
+}
+
+header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #ee8f8f;
+}
+header img:hover{
+    border: 2px solid rgb(5, 160, 160);
+}
+/* -----------نهاية القسم الاول------------*/
+#contact{
+    position: absolute;
+    left: 0px;
+    top: 30%;
+    position: fixed;
+}
+#contact img{
+    width: 50px;
+    margin-bottom: 10px;
+    display: block;
+}
+aside{
+    width: 80%;
+    float: left;
+    border-bottom: 2px solid #ee8f8f;
+}
+aside div{
+    background-color: #ee8f8f;
+    width: 55%;
+    margin: 50px 0px;
+    animation-duration: 3s;
+    animation-name: slidein;
+    text-align: center;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 55%;
+    }
+  }
+aside h1{
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(5, 160, 160);
+}
+aside pre{
+    font-size: 20px;
+    font-weight: bolder;
+}
+aside img{
+    position: absolute;
+    float: left;
+    top: 0px;
+    left: 5%;
+}
+main{
+    width: 80%;
+    height: auto;
+    float: left;
+    background-color: rgb(5, 160, 160);
+    text-align: center;
+}
+main h1{
+    font-size: 30px;
+    color: #ee8f8f;
+    margin: 20px 0px;
+}
+
+.slidershow{
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+}
+.middle{
+    margin-right: 25%;
+    position: relative;
+}
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar{
+    width: 30px;
+    height: 10px;
+    border: 2px solid #ee8f8f;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.bar:hover{
+    background: #ee8f8f;
+}
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+} 
+.slides{
+    width: 900%;
+    height: 100%;
+    display: flex;
+}
+  
+.slide{
+    width: 11.1%;
+    transition: 0.6s;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+ 
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -11.1%;
+}
+#r3:checked ~ .s1{
+    margin-left: -22.2%;
+}
+#r4:checked ~ .s1{
+    margin-left: -33.3%;
+}
+#r5:checked ~ .s1{
+    margin-left: -44.4%;
+}
+#r6:checked ~ .s1{
+    margin-left: -55.5%;
+}
+#r7:checked ~ .s1{
+    margin-left: -66.6%;
+}
+#r8:checked ~ .s1{
+    margin-left: -77.7%;
+}
+#r9:checked ~ .s1{
+    margin-left: -88.8%;
+}
+main img{
+    width: 30%;
+    height: 350px;
+    margin: 10px;
+}
+
+footer{
+    width: 80%;
+    height: 200px;
+    float: left;
+    background-image: linear-gradient(to right, #111, #ee8f8f,#111);
+    position: relative;
+    
+}
+footer span{
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+    font-size: 20px;
+    color: rgb(5, 160, 160);
+    -webkit-text-stroke: 1px #111;
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
